@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>To-do List</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color:aliceblue;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3%;
+
+        }
+
+        input {
+            padding: 25px;
+            border-radius: 10px 0 0 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 25px;
+            border-radius: 0 10px 10px 0;
+            background-color: #4caf50;
+            color: white;
+            border: 1px solid #4caf50;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #task {
+            margin-top: 20px;
+        }
+        
+        p {
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 20%;
+            margin-right: 20%;
+            box-shadow: 0.5px 0.5px 0.5px 0.5px grey;
+        }
+
+        #rem {
+            background: orangered;
+            color: white;
+            padding: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            border: 2px solid orangered;
+        }
+        h1{
+            text-align: center;
+            padding:20px;
+            color:dodgerblue;
+        }
+        p:hover{
+            padding: 18px;
+            position: relative;
+            transition: 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO TO-DO LIST</h1>
+    <div class="container">
+        <input type="text" id="inp" placeholder="Enter_tasks" required>
+        <button onclick="addtask()" id="sub">Add</button>
+    </div>
+    <div id="task"></div>
+</body>
+</html>
